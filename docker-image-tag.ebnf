@@ -1,0 +1,8 @@
+ImageTag       = [RegistryURI, "/"], [{RepositoryName, "/"}],
+                 ImageName, ":",  VersionName;
+RegistryURI    = {Letter | Digit | "."};
+RepositoryName = {Letter | Digit};
+ImageName      = {Letter | Digit};
+VersionName    = {Letter | Digit | "."};
+Letter         = ? Any letter from "A-z" ?;
+Digit          = ? Any digit from "0-9" ?;
